@@ -70,7 +70,7 @@ If you would like to connect with me:
 (If hosted, add your GitHub Pages / Netlify link here)
 
 
-https://your-live-link.com
+ https://xenofang.github.io/Portfolio/
 
 
 ---
