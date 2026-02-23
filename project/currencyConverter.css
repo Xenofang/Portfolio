@@ -1,0 +1,221 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: #0f0f1a;
+  color: #e0e0ff;
+}
+
+/* ===== NAVBAR ===== */
+.header {
+  background: rgba(20, 20, 35, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 18px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #1f1f2e;
+}
+
+#navBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+}
+
+#navBar a {
+  text-decoration: none;
+  color: #00f7ff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+#navBar a:hover {
+  border: 1px solid #00f7ff;
+  box-shadow: 0 0 10px #00f7ff;
+  transform: translateY(-2px);
+}
+
+#navBar a.active {
+  background: #00f7ff;
+  color: #0f0f1a;
+  box-shadow: 0 0 15px #00f7ff;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.project-details {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 50px;
+  background: #141428;
+  border-radius: 20px;
+  border: 1px solid #1f1f2e;
+  box-shadow: 0 0 30px rgba(0, 247, 255, 0.15);
+  transition: 0.3s ease;
+}
+
+.project-details:hover {
+  box-shadow: 0 0 45px rgba(255, 0, 247, 0.35);
+}
+
+/* ===== MAIN TITLE ===== */
+.project-details h1 {
+  font-size: 2.7rem;
+  text-align: center;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #00f7ff, #ff00f7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== DESCRIPTION ===== */
+.project-description {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  color: #bdbdff;
+  line-height: 1.6;
+}
+
+/* ===== SECTION ===== */
+.project-section {
+  margin-bottom: 40px;
+}
+
+.project-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  color: #ff00f7;
+}
+/* ===== Neon Demo Button ===== */
+#demoBtn {
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00f7ff, #ff00f7);
+  color: #0f0f1a;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 0 15px rgba(0, 247, 255, 0.6),
+    0 0 25px rgba(255, 0, 247, 0.4);
+}
+
+/* Hover Effect */
+#demoBtn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 
+    0 0 25px #00f7ff,
+    0 0 45px #ff00f7;
+}
+
+/* Click Effect */
+#demoBtn:active {
+  transform: scale(0.95);
+}
+
+/* ===== LISTS ===== */
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+/* ===== LINKS ===== */
+a {
+  text-decoration: none;
+  color: #00f7ff;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 8px #00f7ff;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: linear-gradient(90deg, #00f7ff, #ff00f7);
+  color: #0f0f1a;
+}
+
+td {
+  border-bottom: 1px solid #1f1f2e;
+  color: #ccc;
+}
+
+/* ===== CODE BLOCK ===== */
+pre {
+  background: #0f0f1a;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #1f1f2e;
+  overflow-x: auto;
+  color: #00f7ff;
+}
+
+/* ===== BUTTON STYLE ===== */
+button {
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00f7ff, #ff00f7);
+  color: #0f0f1a;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.5);
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 30px #ff00f7;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .project-details {
+    margin: 40px 15px;
+    padding: 30px;
+  }
+
+  .project-details h1 {
+    font-size: 2rem;
+  }
+
+  #navBar {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
